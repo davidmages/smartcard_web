@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Inscription</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html">Smart-Card</a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="nous_contacter.html">Nous contacter</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+	<p>
+	<form name="formulaireInsc" class="formInsc" action="infos_entreprise.html" >
+		<h1>Inscription</h1>
+		<hr align="left" style="width:400px"><br><br>
+	
+		<label for="nom">Nom :</label>
+		<input type=text placeholder="nom"  name="nom" ng-model="signup.nom"  required /><br><br>
+
+		
+		
+		
+		<label for="prenom">Prénom :</label>
+		<input type=text name="prenom" required /><br><br>
+		
+		<label for="mail">Adresse mail :</label>
+		<input type=text name="mail" required /><br><br>
+		
+		<label for="mdp">Mot de passe : </label>
+		<input type=text name="mdp" required /><br><br>
+
+		Situation familiale : &nbsp;<SELECT name="famille" >
+						<OPTION VALUE="celibataire">Célibataire</OPTION>
+						<OPTION VALUE="couple">En couple</OPTION>
+						<OPTION VALUE="concubinage">En concubinage</OPTION>
+						<OPTION VALUE="pacse">Pacsé</OPTION>
+						<OPTION VALUE="divorce">Divorcé(e)</OPTION>
+						<OPTION VALUE="veuf">Veuf/Veuve</OPTION>
+					</SELECT><br><br>
+					
+		<label for="date">Date de naissance :</label>
+		<input type="date" name="datnais" required /><br><br><br>
+		
+		<div class="button">
+        <button type="submit">Envoyer</button>
+    </div>
+		
+	</p>
+	
+	</form>
+	
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="" target="_blank" class="facebook"></a><a href="" target="_blank" class="googleplus"></a><a href="" target="_blank" class="twitter"></a><a href="" target="_blank" class="tumbler"></a>			</div>
+			<p>
+			</div>
+				© 2023 Smart-Card. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
